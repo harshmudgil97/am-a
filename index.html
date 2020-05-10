@@ -27,6 +27,9 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- for navbar collape -->
+
   <script type="text/javascript" src="js/nav-script.js" ></script>
 
 
@@ -260,7 +263,7 @@
         </div>
 
         <div class="col-lg-6 col-md-12 contact-forum">
-          <form action="mailto:anil.mudgil@amaequip.com" method="post" enctype="text/plain">
+          <form action="mailto:anil.mudgil@amaequip.com" method="post" enctype="text/plain" onsubmit="this.submit(); this.reset(); return false;">
 
             <table>
               <tr>
@@ -276,7 +279,7 @@
                   <label for="get email">Email:</label>
                 </td>
                 <td>
-                  <input type="email" name="Email " value="">
+                  <input  type="email" name="Email " value="">
                 </td>
               </tr>
               <tr>
@@ -284,7 +287,7 @@
                   <label for="Mobile Number">Mobile Number:</label>
                 </td>
                 <td>
-                  <input type= "number" name="Mobile Number " value="">
+                  <input class="input-feild" type= "number" name="Mobile Number " value="">
                 </td>
               </tr>
               <tr>
@@ -302,7 +305,7 @@
                 <td>
 
                   <button class="btn btn-lg site-wide-button btn-block
-                   custom-submit-btn"
+                   custom-submit-btn" onclick="myFunction()"
                    type="submit">Submit <i class="fas fa-arrow-circle-right"></i></button>
 
                 </td>
