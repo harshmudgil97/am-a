@@ -152,7 +152,7 @@ td{
 
 /* footer */
 #footer .container-fluid{
-  
+
   font-size: 0.8rem;
 }
 
@@ -168,13 +168,12 @@ td{
   }
 }
 
-/* REORDERS THE COLUMNS WHEN SECREEN SMALL */
-@media screen and (max-width:768px){
-.container { display: flex; flex-flow: column; }
-    .order-i { order: 1; }
-    .order-ii { order: 2; }
-}
+
 @media (max-width: 650px){
+/* REORDERS THE COLUMNS WHEN SECREEN SMALL */
+  .container { display: flex; flex-flow: column; }
+      .order-i { order: 1; }
+      .order-ii { order: 2; }
 
   /* GENERIC_TAGS */
   p{
